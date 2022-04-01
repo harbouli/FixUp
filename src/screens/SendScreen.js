@@ -2,11 +2,9 @@ import {StatusBar, StyleSheet, Text, View} from 'react-native';
 import React, {useEffect, useState} from 'react';
 import {useNavigation} from '@react-navigation/native';
 import {Colors, Fonts} from '../constants';
-import {Displayer} from '../utils';
 import Traduction from '../translate';
 import {useSelector} from 'react-redux';
 
-const {setWidth, setHeight} = Displayer;
 export default function Splash() {
   const navigation = useNavigation();
   useEffect(() => {
