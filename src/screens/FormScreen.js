@@ -49,27 +49,49 @@ export default function FormScreen({route, navigation}) {
   const [photo, setPhoto] = useState('');
   const [isDropDownOpne, setIsDropDownOpne] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-
+  const errorHandler = [
+    {
+      submit: 'فشل الإرسال',
+      phone: ' الرجاء إدخال رقم هاتفك الصحيح',
+      discription: 'يرجى إدخال الوصف',
+      address: 'الرجاء إدخال عنوانك',
+      name: 'إدخال اسم كامل',
+    },
+    {
+      submit: 'échec de la soumission',
+      phone: 'Entrer votre numéro de téléphone',
+      discription: 'Entrer votre description',
+      address: 'Entrer votre adresse',
+      name: 'Entrer votre nom complet',
+    },
+  ];
   // On Submit
   async function submitOrder() {
     if (!fullname || fullname.trim().length < 3) {
-      Alert.alert('Submit Failed', 'Please enter a valid fullname');
+      Alert.alert(errorHandler[isArabic].submit, errorHandler[isArabic].name);
       return;
     }
-    if (!description || description.trim().length < 2) {
-      Alert.alert('Submit Failed', 'Please enter Description');
-      return;
-    }
+
     if (!address) {
-      Alert.alert('Submit Failed', 'Please enter a valid email');
+      Alert.alert(
+        errorHandler[isArabic].submit,
+        errorHandler[isArabic].address,
+      );
       return;
     }
 
     if (!phone || phone.trim().length < 10 || phone.trim().length > 10) {
-      Alert.alert('Submit Failed', 'Please enter a valid phone number');
+      Alert.alert(errorHandler[isArabic].submit, errorHandler[isArabic].phone);
       return;
     }
 
+    if (!description || description.trim().length < 2) {
+      Alert.alert(
+        errorHandler[isArabic].submit,
+        errorHandler[isArabic].discription,
+      );
+      return;
+    }
     console.log({fullname, address, description, phone});
 
     const UploadURI = photo;

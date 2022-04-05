@@ -25,13 +25,33 @@ const SingUpScreen = ({navigation}) => {
 
   const [isArabic, setIsArabic] = useState(lang);
 
+  const errorHandler = [
+    {
+      submit: 'حقل اجباري',
+      password: 'كلمة مرور لا تقل عن 6 أحرف',
+      email: 'صيغة  بريد إلكتروني غير صحيح',
+      phone: 'أدخل رقم الهاتف  صحيح',
+      name: 'أدخل اسم كامل  صحيح',
+    },
+    {
+      submit: 'Champs obligatoires',
+      password: 'Mot de passe au moins 6 caractères',
+      email: 'Format email incorrecte',
+      phone: 'Veuillez entrer un numéro de téléphone valide',
+    },
+  ];
+
   const validation = Yup.object({
-    fullname: Yup.string().required('Required').trim('Full Name Is Not Valid'),
-    telephone: Yup.string().required('Required').min(10),
-    email: Yup.string().required('Required').email('Email Format is Incorrect'),
+    fullname: Yup.string().required(errorHandler[isArabic].submit),
+    telephone: Yup.string()
+      .required(errorHandler[isArabic].submit)
+      .min(10, errorHandler[isArabic].phone),
+    email: Yup.string()
+      .required(errorHandler[isArabic].submit)
+      .email(errorHandler[isArabic].email),
     password: Yup.string()
-      .required('Required')
-      .min(6, 'Password Must Contain At Least 6 Characters,'),
+      .required(errorHandler[isArabic].submit)
+      .min(6, errorHandler[isArabic].password),
   });
 
   // Redux Tools
