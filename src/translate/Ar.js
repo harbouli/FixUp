@@ -37,6 +37,6 @@ export default {
   // PROB
   title1: 'لإصلاح مشكلتك ',
 
-  Prob: 'صيف مشكلتك ',
+  Prob: 'صف مشكلتك ',
   SendSc: 'تم إرسال طلبك ',
 };

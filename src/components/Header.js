@@ -13,7 +13,7 @@ const Header = ({navigation, children}) => {
         <ArrowLeft />
       </Pressable>
       <Text
-        style={{fontSize: 24, fontFamily: Fonts.Ara_Bold, color: '#000000'}}>
+        style={{fontSize: 21, fontFamily: Fonts.Ara_Bold, color: '#000000'}}>
         {children}
       </Text>
     </View>

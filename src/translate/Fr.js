@@ -19,7 +19,7 @@ export default {
   Setting: 'Changer de langue',
 
   passWprd: 'Mot de passe',
-  address: 'Addresse',
+  address: 'address',
   Info: 'personal information',
 
   Save: 'Enregistrer',
@@ -35,9 +35,9 @@ export default {
   LOGOUT: 'Déconnecter',
 
   // PROB
-  title1: ' Réparons votre probléme',
+  title1: ' Réparons votre problème',
 
-  Prob: 'Merci de décriver votre probléme',
+  Prob: 'Merci de décriver votre problème',
 
   btn3: 'Envoyer',
   SendSc: 'Bien envoyé',
