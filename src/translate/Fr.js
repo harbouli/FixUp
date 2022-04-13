@@ -19,12 +19,12 @@ export default {
   Setting: 'Changer de langue',
 
   passWprd: 'Mot de passe',
-  address: 'address',
-  Info: 'personal information',
+  address: 'addresse',
+  Info: 'information personnelle',
 
   Save: 'Enregistrer',
   BTN1: 'Créer un compte',
-  Email: 'Address Mail',
+  Email: 'Addresse Mail',
   Camera: 'Appareil photo ',
   galerie: 'galerie',
   imageProb: 'Image de problème',

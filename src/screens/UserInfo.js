@@ -33,21 +33,21 @@ const UserInfo = ({navigation}) => {
             styles.Text,
             {fontFamily: isArabic == 0 ? Fonts.Ara_Bold : Fonts.EC_Bold},
           ]}>
-          Full Name: {fullname}
+          {Traduction[isArabic].Info}: {fullname}
         </Text>
         <Text
           style={[
             styles.Text,
             {fontFamily: isArabic == 0 ? Fonts.Ara_Bold : Fonts.EC_Bold},
           ]}>
-          Phone: {phone}
+          {Traduction[isArabic].Tel}: {phone}
         </Text>
         <Text
           style={[
             styles.Text,
             {fontFamily: isArabic == 0 ? Fonts.Ara_Bold : Fonts.EC_Bold},
           ]}>
-          Email: {email}
+          {Traduction[isArabic].Email}: {email}
         </Text>
       </View>
       <Link

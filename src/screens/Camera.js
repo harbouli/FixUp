@@ -26,7 +26,6 @@ const Camera = () => {
     try {
       const options = {quality: 0.5, base64: true, with: 500, height: 500};
       const data = await takePicture(options);
-      console.log(data.uri);
       const filePath = data.uri;
       dispatch(GeneralAction.setImage(filePath));
     } catch (error) {
