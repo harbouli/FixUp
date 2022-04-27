@@ -149,6 +149,7 @@ const SingUpScreen = ({navigation}) => {
                     KeyboardType="default"
                     onChangeText={handleChange('password')}
                     isArabic={isArabic}
+                    secureTextEntry={true}
                     autoComplete="off">
                     {Traduction[isArabic].passWprd}
                   </FormInput>

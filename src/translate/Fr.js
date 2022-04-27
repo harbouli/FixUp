@@ -19,12 +19,12 @@ export default {
   Setting: 'Changer de langue',
 
   passWprd: 'Mot de passe',
-  address: 'addresse',
-  Info: 'information personnelle',
+  address: 'Adresse',
+  Info: 'Information personnelle',
 
   Save: 'Enregistrer',
   BTN1: 'Créer un compte',
-  Email: 'Addresse Mail',
+  Email: 'Adresse Mail',
   Camera: 'Appareil photo ',
   galerie: 'galerie',
   imageProb: 'Image de problème',
@@ -35,9 +35,9 @@ export default {
   LOGOUT: 'Déconnecter',
 
   // PROB
-  title1: ' Réparons votre problème',
+  title1: 'Réparons votre problème',
 
-  Prob: 'Merci de décriver votre problème',
+  Prob: 'Merci de décrire votre problème',
 
   btn3: 'Envoyer',
   SendSc: 'Bien envoyé',
